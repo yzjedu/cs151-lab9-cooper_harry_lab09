@@ -9,47 +9,30 @@ Tasks
 
 Purpose: Make sure the file name being entered exists  
 Name: verify_file  
-Parameters:   
-Return: file name  
+Parameters: file_name
+Return: names- names on the list, [] - empty list
 Algorithm:   
 1. Prompt the user to input the name of the file they want to read the names from
 2. While the file name entered is not a real file name:
    1. Output an error message
    2. Prompt the user to input the file name again
 
-Purpose: Read names from the file and add them to a list  
-Name: add_to_list  
-Parameters: file name  
-Return:   
-Algorithm:   
-1. Create an empty list
-2. Open the file indicated by the file name with the intent to read
-3. Read each line from the file into the list
-4. Close the file
-
-Purpose: Assign the names into groups of five  
+Purpose: to assign each name to a seat for every table needed
 Name: organize  
-Parameters: list  
-Return:   
+Parameters: names  
+Return: assigned_seat - seat number for the table , num_tables - what table your assigned to
 Algorithm:
-1. For each name in the list:
-   1. Add the name to a different list than the main list
-   2. If the length of the previous list is five:
-      1. Create a new empty list and add the next name to the new list
-   3. 
-
-Purpose: Display the final list  
-Name: display_list  
-Parameters: lists  
-Return:   
-Algorithm:
-1. 
+1. determine how many tables are needed
+2. for every table needed
+   1. assign 5 names to specific seats at the table 
 
 Purpose: Run the program  
 Name: main  
 Parameters:   
 Return:   
 Algorithm:
-1. Output the purpose of the program
-2. Import os
-3. 
+1. create a sentinel
+2. prompt the user to input a valid file name
+3. when the file does not exist
+   1. prompt the user to input a valid file
+4. output the assigned seat, name, and table number
