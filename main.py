@@ -1,3 +1,14 @@
+# Programmers: Harry Li, Cooper Nazar
+# Course:  CS151*06
+# Due Date: 11/14/2024
+# Lab Assignment: Lab 09
+# Problem Statement: Create a program to read in all the attendees and then output the seat assignments.
+# Data In: Name of chosen file
+# Data Out: File containing list of names
+
+# Purpose: Make sure the file name being entered exists
+# Parameters: file_name
+# Return: names
 def verify_file(file_name):
     try:
         with open(file_name, 'r') as file:
@@ -7,6 +18,9 @@ def verify_file(file_name):
         print(f'Error: File {file_name} not found.')
         return []
 
+# Purpose: Assign each name to a seat for every table needed
+# Parameters: names
+# Return: assigned_seat (number of seats per table), num_tables (what table a person is assigned to)
 def organize(names):
     table_size = 5
     num_tables = len(names) // table_size
@@ -21,6 +35,9 @@ def organize(names):
     
     return assigned_seat, num_tables
 
+# Purpose: Run the program
+# Parameters: None
+# Return: None
 def main():
     correct_name = 0
     while correct_name != 10:

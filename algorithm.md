@@ -20,19 +20,19 @@ Algorithm:
 Purpose: to assign each name to a seat for every table needed
 Name: organize  
 Parameters: names  
-Return: assigned_seat - seat number for the table , num_tables - what table your assigned to
+Return: assigned_seat - seat number for the table , num_tables - what table you're assigned to
 Algorithm:
-1. determine how many tables are needed
-2. for every table needed
-   1. assign 5 names to specific seats at the table 
+1. Determine how many tables are needed
+2. For every table needed
+   1. Assign 5 names to specific seats at the table 
 
 Purpose: Run the program  
 Name: main  
 Parameters:   
 Return:   
 Algorithm:
-1. create a sentinel
-2. prompt the user to input a valid file name
-3. when the file does not exist
-   1. prompt the user to input a valid file
-4. output the assigned seat, name, and table number
+1. Create a sentinel
+2. Prompt the user to input a valid file name
+3. When the file does not exist
+   1. Prompt the user to input a valid file
+4. Output the assigned seat, name, and table number
