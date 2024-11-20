@@ -12,7 +12,8 @@
 def verify_file(file_name):
     try:
         with open(file_name, 'r') as file:
-            names = [line.strip() for line in file]
+            for line in file_name:
+                name = line.strip()
         return names
     except FileNotFoundError:
         print(f'Error: File {file_name} not found.')
