@@ -33,11 +33,11 @@
 
 | Result     | Description                                                                              |
 |------------|------------------------------------------------------------------------------------------|
-| **YES-** | The algorithm matches the code                                           |
+| **NO-** | The algorithm matches the code                                           |
 | **YES-** | Purpose of the program is clearly stated |  
 | **YES-** | There is at least one for loop in the code                                              |
 | **YES-** | All loops except for error checking on user input is a loop                             |
-| **-NO** | Error checking on user input `filename` with  `while os.path.isfile(filename)` |
+| **-YES** | Error checking on user input `filename` with  `while os.path.isfile(filename)` |
 | **YES-** | There is a function for error checking file name that returns file name                 |
 | **-YES** | There is a function for reading from the file that returns a list of names              |
 | **-NO** | There is a function for determining and outputting table assignments                    |
@@ -47,17 +47,15 @@
 
 |Result         |Type            |
 |---------------|----------------|
-|**-NO** | Reflection 1   |
+|**-YES** | Reflection 1   |
 |**YES-** | Reflection 2   |
 |**YES-** | Algorithm      |
 
 ### Comments on the grading
-- `[line.strip() for line in file]` - Feels like the code is written by AI
-- `return assigned_seat, num_tables` -  We did not discuss tuple returns
-- 
+- The algorithm does not match the code at all
+- `try: with open(file_name, 'r') as file:`: you can't use try and with together
 
-### Grade: R
+### Grade: M
 
 ### Participation Grade: S
-U for Harry
  - If participation grade is unsatisfactory check the `NO` in the documents sections
